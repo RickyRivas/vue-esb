@@ -4,6 +4,8 @@
 <!-- Nav End -->
 <!-- Main Start -->
 <main>
+  <!-- Current View via the router -->
+  <router-view></router-view>
 </main>
 <!-- Main End -->
 </template>
