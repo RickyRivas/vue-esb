@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--- Nav Start -->
+<the-nav/>
+<!-- Nav End -->
+<!-- Main Start -->
+<main>
+</main>
+<!-- Main End -->
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TheNav from './components/layout/TheNav.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TheNav
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+ font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 20px;
+  }
 }
 </style>

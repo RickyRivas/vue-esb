@@ -1,0 +1,14 @@
+@media (min-width: 0px){
+    .hello {
+        p {
+            color: $red;
+        }
+    }
+}
+@media (min-width: 768px){
+    .hello {
+        p {
+            color: pink;
+        }
+    }
+}
